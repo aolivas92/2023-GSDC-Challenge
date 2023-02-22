@@ -1,0 +1,22 @@
+User Use Cases:
+    Prerequist: User log in or create account
+    View all Urgent Cares on google maps
+    For each Urgent Care
+        location, website, phonenumber, hours, if they do covid/flu test/vaccine, out of pocket price, if they accept no insurance
+    User profile
+        name, email, username, insurance provider
+    Request to add updates to Ugrent Care details
+
+Pages
+    Main Page: Google maps with all the urgent Cares
+        Option: Filter that accepts their insurance provider
+        Option: Show all Urgent Cares
+        Option: Currently Open/Closed
+        Option: Covid/Flue option
+    LogIn/Sign Up Page:
+
+    User Information Page:
+        Mainly: add a way to change insurance
+    Request Update On Urgent Care Page:
+        Request something they want to update to a specific urgent Care location
+    Report a bug Page
