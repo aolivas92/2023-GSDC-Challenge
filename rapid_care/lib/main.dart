@@ -12,7 +12,21 @@ class homePage extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar:
-          AppBar(backgroundColor: Colors.blue, title: const Text('Rapid Care')),
+          AppBar(backgroundColor: Colors.red, title: const Text('Rapid Care')),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.red,
+        onPressed: () {
+          print('pressed!');
+        },
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings')
+        ],
+      ),
     ));
   }
 }
