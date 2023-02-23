@@ -12,17 +12,14 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar:
-    AppBar(backgroundColor: Colors.red, title: const Text('Rapid Care')),
-    floatingActionButton: FloatingActionButton(
-    backgroundColor: Colors.red,
-    onPressed: () {
-    print('pressed!');
-    },
-    child: const Icon(Icons.add),
-    )
-    );
+        appBar: AppBar(
+            backgroundColor: Colors.red, title: const Text('Rapid Care')),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.red,
+          onPressed: () {
+            print('pressed!');
+          },
+          child: const Icon(Icons.add),
+        ));
   }
 }
-
-
