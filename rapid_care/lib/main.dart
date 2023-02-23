@@ -1,21 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:rapid_care/pages/main_page.dart';
 
 void main(List<String> args) {
-  runApp(const mainPage());
+  runApp(homePage());
 }
 
-class mainPage extends StatelessWidget {
-  const mainPage({super.key});
+class homePage extends StatelessWidget {
+  const homePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Rapid Care',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.red,
-        ),
-    home: const MainPage()); // This is the main page of the app that gets called from main_page.dart
+        home: Scaffold(
+      appBar:
+          AppBar(backgroundColor: Colors.red, title: const Text('Rapid Care')),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.red,
+        onPressed: () {
+          print('pressed!');
+        },
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings')
+        ],
+      ),
+    ));
   }
 }
